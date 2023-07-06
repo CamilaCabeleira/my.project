@@ -1,17 +1,21 @@
-#ejercicio 1:
-# varHola = 'Hola mundo!'
-#print (varHola)
+"""
+Escribe, en Python, un programa que muestre en pantalla los números del 0 al 100,
+sustituyendo los múltiplos de 3 por la palabra "Fizz" y, a su vez, los múltiplos
+de 5 por "Buzz". Cuando, al mismo tiempo, son múltiplos de 3 y 5, utiliza "FizzBuzz"
+"""
 
-#ejercicio 2:
-# print(((3 + 2) / (2 * 5)) ** 2)
+FIZZ = "Fizz"
+BUZZ = "Buzz"
 
-#ejercicio 3
-for num in range(101):
-    if num % 3 == 0 and num % 5 == 0:
-        print("FizzBuzz")
-    elif num % 3 == 0:
-        print("Fizz")
-    elif num % 5 == 0:
-        print("Buzz")
+for i in range(100 + 1):
+    es_divisible_por_3 = i % 3 == 0
+    es_divisible_por_5 = i % 5 == 0
+
+    if es_divisible_por_5 and es_divisible_por_3:
+        print(FIZZ + BUZZ)
+    elif es_divisible_por_3:
+        print(FIZZ)
+    elif es_divisible_por_5:
+        print(BUZZ)
     else:
-        print(num)
+        print(i)
