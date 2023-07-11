@@ -5,6 +5,7 @@ franja 2:  25ºC < x < 30ºC
 franja 3:  > 30ºC
 """
 import time
+import unittest
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -32,3 +33,5 @@ try:
 finally:
     time.sleep(3)
     driver.close()
+
+    #class TestSuma(unittest.TestCase):
